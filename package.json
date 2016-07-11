@@ -1,0 +1,34 @@
+{
+  "name": "worker",
+  "version": "1.0.0",
+  "description": "Front-end development settings that using gulp",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://leejunho84@github.com/leejunho84/worker.git"
+  },
+  "keywords": [
+    "front",
+    "gulp",
+    "settings",
+    "ecmascript6",
+    "7"
+  ],
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/leejunho84/worker/issues"
+  },
+  "homepage": "https://github.com/leejunho84/worker#readme",
+  "devDependencies": {
+    "browser-sync": "^2.13.0",
+    "express": "^4.14.0",
+    "gulp": "^3.9.1",
+    "gulp-sass": "^2.3.2",
+    "gulp-sourcemaps": "^1.6.0",
+    "path": "^0.12.7"
+  }
+}
