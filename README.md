@@ -1,3 +1,7 @@
 # worker
 
-1. [gulp-sass 활용하기](https://leejunho84.github.com/worker/gulp-sass)
+```
+$ npm install
+```
+
+1. [gulp-sass 활용하기](https://github.com/leejunho84/worker/tree/master/src/gulp-sass)

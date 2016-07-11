@@ -3,10 +3,7 @@
 var gulp = require('gulp');
 var sass = require('gulp-sass');
 var sourcemaps = require('gulp-sourcemaps');
-var express = require('express');
 var browserSync = require('browser-sync');
-var path = require('path');
-var app = express();
 
 var args = {
 	"sass":{
@@ -16,15 +13,11 @@ var args = {
 	}
 }
 
-app.use('/css', express.static(path.join(__dirname, 'css')));
-app.get('', function(req, res){
-	res.sendFile(path.join(__dirname, 'index.html'));
-});
-
-gulp.task('webserver', ['build:sass'], function(){
-	app.listen(4000);
-	browserSync({
-		proxy:'localhost:4000'
+gulp.task('staticServer', ['build:sass'], function(){	
+	browserSync.init({
+		server:{
+			baseDir:'./'
+		}
 	});
 });
 
@@ -42,4 +35,4 @@ gulp.task('watch', function(){
 	gulp.watch(args.sass.watch, ['build:sass']);
 });
 
-gulp.task('default', ['webserver', 'watch']);
+gulp.task('default', ['staticServer', 'watch']);
