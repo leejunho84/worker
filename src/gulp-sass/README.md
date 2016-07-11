@@ -7,14 +7,14 @@ npm 모듈인 gulp-sass를 이용하여 웹페이지에 sass를 사용하기 위
 - **browser-sync** : 서버를 띄우고 변경사항에 대해 다시 로드 해준다.
 
 > 디렉토리 구조
-<pre><code>
+```
 ├── src
 │   └── gulp-sass
 │       ├── sass
 │       |   └── layout.scss
 │       └── gulpfile.js
 └── package.json
-</code></pre>
+```
 
 
 
