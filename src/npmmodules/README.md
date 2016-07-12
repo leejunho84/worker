@@ -1,6 +1,6 @@
 ## 유용한 node 모듈
 
-#### gulp [https://www.npmjs.com/package/gulp](https://www.npmjs.com/package/gulp)
+### gulp  [https://www.npmjs.com/package/gulp](https://www.npmjs.com/package/gulp)
 ```
 var gulp = require('gulp');
 gulp.task('build', [...task], function(){
@@ -10,19 +10,20 @@ gulp.task('build', [...task], function(){
 gulp.task('default', ['build']);
 ```
 > **gulp plugin**
-    - gulp-sourcemaps
-    - gulp-if
-    - gulp-sass
-    - gulp-rename
-    - gulp-hb
-    - gulp-replace
-    - gulp-plumber
-    - gulp-notify
-    - gulp-concat
-    - gulp-uglify
+
+- gulp-sourcemaps
+- gulp-if
+- gulp-sass
+- gulp-rename
+- gulp-hb
+- gulp-replace
+- gulp-plumber
+- gulp-notify
+- gulp-concat
+- gulp-uglify
 
 
-#### express [https://www.npmjs.com/package/express](https://www.npmjs.com/package/express)
+### express  [https://www.npmjs.com/package/express](https://www.npmjs.com/package/express)
 Fast, unopinionated, minimalist web framework
 ```
 var express = require('express')
@@ -35,7 +36,7 @@ app.get('/', function (req, res) {
 app.listen(3000)
 ```
 
-#### browser-sync [https://www.browsersync.io/docs/gulp](https://www.browsersync.io/docs/gulp)
+### browser-sync  [https://www.browsersync.io/docs/gulp](https://www.browsersync.io/docs/gulp)
 ```
 var browserSync = require('browser-sync');
 browserSync.init({
@@ -54,7 +55,7 @@ browser({
 ```
 
 
-#### browserify [https://www.npmjs.com/package/gulp-sourcemaps](https://www.npmjs.com/package/gulp-sourcemaps)
+### browserify  [https://www.npmjs.com/package/gulp-sourcemaps](https://www.npmjs.com/package/gulp-sourcemaps)
 ```
 var browserify = require('browserify');
 var babelify = require('babelify');
@@ -66,7 +67,10 @@ gulp.task('build:javascript', function(){
     .pipe(gulp.dest('./js/'))
 });
 ```
+> 출처 : [Gulp 와 Browserify 그리고 Vinyl - 감성 프로그래밍](http://programmingsummaries.tistory.com/382)
 
 
-#### path
-#### findup-sync
+### path
+
+
+### findup-sync
