@@ -6,7 +6,11 @@ gulp plugin gulp-sass를 이용하여 웹페이지에 sass를 사용하기 위�
 - **gulp-sourcemaps** : 디버깅할때 쓰는 map 파일을 만들어준다
 - **browser-sync** : 서버를 띄우고 변경사항에 대해 다시 로드 해준다.
 
+<<<<<<< HEAD
 > **디렉토리 구조**
+=======
+> 디렉토리 구조
+>>>>>>> 400d815fc37e3b42d55018389bd0965fd478c0c2
 ```
 ├── src
 │   └── gulp-sass
