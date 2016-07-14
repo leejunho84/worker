@@ -23,9 +23,9 @@ gulp.task('staticServer', ['build:sass'], function(){
 
 gulp.task('build:sass', function(){
 	return gulp.src(args.sass.src)
-		.pipe(sourcemaps.init({loadMaps: true, debug: true}))
-		.pipe(sass({outputStyle:"compressed"}).on('error', sass.logError))
-		.pipe(sourcemaps.write('./'))
+		//.pipe(sourcemaps.init({loadMaps: true, debug: true}))
+		.pipe(sass().on('error', sass.logError))
+		//.pipe(sourcemaps.write('./'))
 		.pipe(gulp.dest('./css'))
 		.pipe(browserSync.reload({stream:true}))
 });

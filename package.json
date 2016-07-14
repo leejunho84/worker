@@ -25,10 +25,13 @@
   "homepage": "https://github.com/leejunho84/worker#readme",
   "devDependencies": {
     "browser-sync": "^2.13.0",
+    "browserify": "^13.0.1",
     "express": "^4.14.0",
     "gulp": "^3.9.1",
     "gulp-sass": "^2.3.2",
     "gulp-sourcemaps": "^1.6.0",
+    "jQuery": "^1.7.4",
+    "jquery": "^3.1.0",
     "path": "^0.12.7"
   }
 }

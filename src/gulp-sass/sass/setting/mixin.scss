@@ -1,0 +1,7 @@
+
+@mixin bgLinear ($topColor, $bottomColor, $bgColor) { 
+	background-color:$bgColor;
+	background:$bgColor -webkit-linear-gradient($topColor, $bottomColor);
+    background:$bgColor -moz-linear-gradient($topColor, $bottomColor);
+	background:$bgColor linear-gradient($topColor, $bottomColor);
+}

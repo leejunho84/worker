@@ -1,0 +1,243 @@
+@charset "UTF-8";
+html, body, div, span, applet, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+a, abbr, acronym, address, big, cite, code,
+del, dfn, em, img, ins, kbd, q, s, samp,
+small, strike, strong, sub, sup, tt, var,
+b, u, i, center,
+dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td,
+article, aside, canvas, details, embed,
+figure, figcaption, footer, header, hgroup,
+menu, nav, output, ruby, section, summary,
+time, mark, audio, video {
+  margin: 0;
+  padding: 0;
+  border: 0;
+  font-size: 100%;
+  font: inherit;
+  vertical-align: baseline; }
+
+/* HTML5 display-role reset for older browsers */
+article, aside, details, figcaption, figure,
+footer, header, hgroup, menu, nav, section {
+  display: block; }
+
+body {
+  line-height: 1; }
+
+ol, ul {
+  list-style: none; }
+
+blockquote, q {
+  quotes: none; }
+
+blockquote:before, blockquote:after,
+q:before, q:after {
+  content: '';
+  content: none; }
+
+table {
+  border-collapse: collapse;
+  border-spacing: 0; }
+
+html, body {
+  font-family: "맑은 고딕", "Malgun Gothic", Dotum, applegothic, sans-serif, arial;
+  font-size: 14px;
+  color: #555;
+  background: #fff; }
+
+section, .container {
+  padding: 10px; }
+  section h2, .container h2 {
+    font-size: 18px;
+    font-weight: bold;
+    padding: 20px 0 10px; }
+
+a {
+  text-decoration: none; }
+
+.tmp-radio {
+  display: inline-block; }
+  .tmp-radio input[type=radio] {
+    position: absolute;
+    opacity: 0;
+    filter: alpha(opacity=0); }
+  .tmp-radio label {
+    display: inline-block;
+    position: relative;
+    min-height: 20px;
+    line-height: 25px;
+    padding-left: 28px; }
+    .tmp-radio label i {
+      display: inline-block;
+      position: absolute;
+      top: 0;
+      left: 0;
+      width: 24px;
+      height: 24px;
+      background-image: url("");
+      background-position: 0 -90px;
+      background-repeat: no-repeat; }
+  .tmp-radio.checked label i {
+    background-position: 0 -150px; }
+  .tmp-radio.over label {
+    font-weigth: bold; }
+    .tmp-radio.over label i {
+      background-position: 0 -120px; }
+  .tmp-radio.disabled label {
+    color: #afafaf; }
+    .tmp-radio.disabled label i {
+      background-position: 0 -210px; }
+
+.tmp-checkbox {
+  display: inline-block; }
+  .tmp-checkbox input[type=checkbox] {
+    position: absolute;
+    opacity: 0;
+    filter: alpha(opacity=0); }
+  .tmp-checkbox label {
+    display: inline-block;
+    position: relative;
+    min-height: 20px;
+    line-height: 25px;
+    padding-left: 28px; }
+    .tmp-checkbox label i {
+      display: inline-block;
+      position: absolute;
+      top: 0;
+      left: 0;
+      width: 24px;
+      height: 24px;
+      border: 1px solid #c9c9c9;
+      background-color: #fff;
+      background-image: url("");
+      background-position: 0 90px;
+      background-repeat: no-repeat; }
+  .tmp-checkbox.checked label i {
+    border-color: #c2d228;
+    background-color: #cbdb2a;
+    background-position: 3px -28px; }
+  .tmp-checkbox.over label {
+    font-weigth: bold; }
+    .tmp-checkbox.over label i {
+      border-color: #c3c3c3;
+      background-position: 3px 2px; }
+  .tmp-checkbox.disabled label {
+    color: #afafaf; }
+    .tmp-checkbox.disabled label i {
+      background: #eee;
+      border-color: #dedede; }
+
+.tmp-select {
+  position: relative;
+  width: 200px;
+  min-height: 36px;
+  box-sizing: border-box;
+  border: 1px solid #b1b1b1;
+  cursor: pointer;
+  /*search mode*/ }
+  .tmp-select select {
+    display: none;
+    position: absolute;
+    opacity: 0;
+    filter: alpha(opacity=0); }
+  .tmp-select .ico {
+    position: absolute;
+    top: 8px;
+    right: 12px;
+    display: inline-block;
+    width: 17px;
+    height: 15px;
+    background-image: url("");
+    background-position: 0 0;
+    background-repeat: no-repeat;
+    background-color: #fff; }
+  .tmp-select .select-head {
+    display: inline-block;
+    margin: 7px 0 0 8px;
+    font-size: 16px;
+    color: #555; }
+  .tmp-select .select-body {
+    display: none;
+    margin-top: 5px; }
+    .tmp-select .select-body .list {
+      height: 30px; }
+      .tmp-select .select-body .list .value {
+        display: inline-block;
+        margin: 8px 0 0 8px; }
+      .tmp-select .select-body .list:hover {
+        background-color: #eee; }
+      .tmp-select .select-body .list.on {
+        background-color: #eee; }
+  .tmp-select.on .select-body {
+    display: block; }
+  .tmp-select.search .search-container {
+    padding: 10px 5px; }
+    .tmp-select.search .search-container input[type=text] {
+      width: 100%;
+      border: 0;
+      outline: 0; }
+  .tmp-select.search .select-body {
+    margin-top: 0;
+    max-height: 211px;
+    overflow-x: hidden;
+    overflow-y: auto; }
+
+.tmp-tap {
+  margin-top: 5px;
+  overflow: hidden; }
+  .tmp-tap .tab {
+    float: left;
+    width: 100px;
+    text-align: center; }
+    .tmp-tap .tab a {
+      display: inline-block;
+      width: 100%;
+      height: 34px; }
+      .tmp-tap .tab a:hover {
+        background-color: #ebebeb; }
+      .tmp-tap .tab a.on {
+        border-color: #c2d228;
+        background-color: #e4e7ff; }
+    .tmp-tap .tab .txt {
+      display: block;
+      height: 32px;
+      line-height: 32px;
+      border: 1px solid #cecece;
+      border-left: 0; }
+    .tmp-tap .tab:first-child .txt {
+      border-left: 1px solid #cecece; }
+  .tmp-tap.flex-1 .tab {
+    width: 100%; }
+  .tmp-tap.flex-2 .tab {
+    width: 50%; }
+  .tmp-tap.flex-3 .tab {
+    width: 33.3%; }
+  .tmp-tap.flex-4 .tab {
+    width: 25%; }
+  .tmp-tap.flex-5 .tab {
+    width: 20%; }
+  .tmp-tap.flex-6 .tab {
+    width: 16.6%; }
+  .tmp-tap.mobile {
+    display: -webkit-box;
+    display: -moz-box;
+    display: -ms-flexbox;
+    display: -webkit-flex;
+    display: flex; }
+    .tmp-tap.mobile .tab {
+      flex: 1; }
+
+.gift-container {
+  overflow: auto;
+  width: 980px;
+  margin: -20px 0 0 -20px; }
+  .gift-container .gift {
+    float: left;
+    width: 300px;
+    height: 400px;
+    margin: 20px 0 0 20px;
+    border: 1px solid #777;
+    background-color: #eee; }

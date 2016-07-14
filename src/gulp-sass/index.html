@@ -3,10 +3,191 @@
 <head>
 	<title>gulp-sass</title>
 	<meta name="viewport" content="width=device-width, initial-scale=1">
-	<link rel="stylesheet" type="text/css" href="css/layout.css">
+	<link rel="stylesheet" type="text/css" href="css/common.css">
 <body>
 <div id="wrap">
-	<h1>gulp-sass</h1>
+	<div class="container">
+		<h2>radio</h2>
+		<div class="tmp-radio">
+			<input type="radio" id="rad3" name="radio" value="radio3" />
+			<label for="rad3"><i></i>123</label>
+		</div>
+		<div class="tmp-radio checked">
+			<input type="radio" id="rad0" name="radio" value="radio0" />
+			<label for="rad0"><i></i>123</label>
+		</div>
+		<div class="tmp-radio over">
+			<input type="radio" id="rad1" name="radio" value="radio1" />
+			<label for="rad1"><i></i>345</label>
+		</div>
+		<div class="tmp-radio disabled">
+			<input type="radio" id="rad2" name="radio" value="radio2" />
+			<label for="rad2"><i></i>678</label>
+		</div>
+	</div>
+	<div class="container">
+		<h2>check box</h2>
+		<div class="tmp-checkbox">
+			<input type="checkbox" id="checkbox0" name="checkbox" value="checkbox0" />
+			<label for="checkbox0"><i></i>123</label>
+		</div>
+		<div class="tmp-checkbox checked">
+			<input type="checkbox" id="checkbox1" name="checkbox" value="checkbox1" />
+			<label for="checkbox1"><i></i>123</label>
+		</div>
+		<div class="tmp-checkbox over">
+			<input type="checkbox" id="checkbox2" name="checkbox" value="checkbox2" />
+			<label for="checkbox2"><i></i>345</label>
+		</div>
+		<div class="tmp-checkbox disabled">
+			<input type="checkbox" id="checkbox3" name="checkbox" value="checkbox3" />
+			<label for="checkbox3"><i></i>678</label>
+		</div>
+	</div>
+	<div class="container">
+		<h2>select : simple</h2>
+		<div class="tmp-select on">
+			<select>
+				<option value="0">daum</option>
+				<option value="1">naver</option>
+				<option value="2">google</option>
+			</select>
+			<span class="select-head">choose</span>
+			<i class="ico"></i>
+			<ul class="select-body">
+				<li class="list"><span class="value">daum</span></li>
+				<li class="list on"><span class="value">naver</span></li>
+				<li class="list"><span class="value">google</span></li>
+			</ul>
+		</div>
+		<h2>select : search</h2>
+		<div class="tmp-select search on">
+			<select>
+				<option value="">State</option>
+				<option value="AL">Alabama</option>
+				<option value="AK">Alaska</option>
+				<option value="AZ">Arizona</option>
+				<option value="AR">Arkansas</option>
+				<option value="CA">California</option>
+				<option value="CO">Colorado</option>
+				<option value="CT">Connecticut</option>
+				<option value="DE">Delaware</option>
+				<option value="DC">District Of Columbia</option>
+				<option value="FL">Florida</option>
+				<option value="GA">Georgia</option>
+				<option value="HI">Hawaii</option>
+				<option value="ID">Idaho</option>
+				<option value="IL">Illinois</option>
+				<option value="IN">Indiana</option>
+				<option value="IA">Iowa</option>
+				<option value="KS">Kansas</option>
+				<option value="KY">Kentucky</option>
+				<option value="LA">Louisiana</option>
+				<option value="ME">Maine</option>
+				<option value="MD">Maryland</option>
+				<option value="MA">Massachusetts</option>
+				<option value="MI">Michigan</option>
+				<option value="MN">Minnesota</option>
+				<option value="MS">Mississippi</option>
+				<option value="MO">Missouri</option>
+				<option value="MT">Montana</option>
+				<option value="NE">Nebraska</option>
+				<option value="NV">Nevada</option>
+				<option value="NH">New Hampshire</option>
+				<option value="NJ">New Jersey</option>
+				<option value="NM">New Mexico</option>
+				<option value="NY">New York</option>
+				<option value="NC">North Carolina</option>
+				<option value="ND">North Dakota</option>
+				<option value="OH">Ohio</option>
+				<option value="OK">Oklahoma</option>
+				<option value="OR">Oregon</option>
+				<option value="PA">Pennsylvania</option>
+				<option value="RI">Rhode Island</option>
+				<option value="SC">South Carolina</option>
+				<option value="SD">South Dakota</option>
+				<option value="TN">Tennessee</option>
+				<option value="TX">Texas</option>
+				<option value="UT">Utah</option>
+				<option value="VT">Vermont</option>
+				<option value="VA">Virginia</option>
+				<option value="WA">Washington</option>
+				<option value="WV">West Virginia</option>
+				<option value="WI">Wisconsin</option>
+				<option value="WY">Wyoming</option>
+			</select>
+			<div class="search-container">
+				<input type="text" name="" value="" placeholder="Search..." />
+			</div>
+			<ul class="select-body">
+				<li class="list"><span class="value">daum</span></li>
+				<li class="list"><span class="value">naver</span></li>
+				<li class="list on"><span class="value">google</span></li>
+				<li class="list"><span class="value">daum</span></li>
+				<li class="list"><span class="value">naver</span></li>
+				<li class="list"><span class="value">google</span></li>
+				<li class="list"><span class="value">daum</span></li>
+				<li class="list"><span class="value">naver</span></li>
+				<li class="list"><span class="value">google</span></li>
+			</ul>
+		</div>
+	</div>
+	<div class="container">
+		<h2>tab:pc</h2>
+		<ul class="tmp-tap">
+			<li class="tab"><a href="#" class="on"><span class="txt">tab1</span></a></li>
+			<li class="tab"><a href="#"><span class="txt">tab2</span></a></li>
+			<li class="tab"><a href="#"><span class="txt">tab3</span></a></li>
+			<li class="tab"><a href="#"><span class="txt">tab4</span></a></li>
+		</ul>
+		<ul class="tmp-tap flex-2">
+			<li class="tab"><a href="#" class="on"><span class="txt">tab1</span></a></li>
+			<li class="tab"><a href="#"><span class="txt">tab2</span></a></li>
+		</ul>
+		<ul class="tmp-tap flex-3">
+			<li class="tab"><a href="#" class="on"><span class="txt">tab1</span></a></li>
+			<li class="tab"><a href="#"><span class="txt">tab2</span></a></li>
+			<li class="tab"><a href="#"><span class="txt">tab3</span></a></li>
+		</ul>
+		<ul class="tmp-tap flex-4">
+			<li class="tab"><a href="#" class="on"><span class="txt">tab1</span></a></li>
+			<li class="tab"><a href="#"><span class="txt">tab2</span></a></li>
+			<li class="tab"><a href="#"><span class="txt">tab3</span></a></li>
+			<li class="tab"><a href="#"><span class="txt">tab4</span></a></li>
+		</ul>
+		<ul class="tmp-tap flex-5">
+			<li class="tab"><a href="#" class="on"><span class="txt">tab1</span></a></li>
+			<li class="tab"><a href="#"><span class="txt">tab2</span></a></li>
+			<li class="tab"><a href="#"><span class="txt">tab3</span></a></li>
+			<li class="tab"><a href="#"><span class="txt">tab4</span></a></li>
+			<li class="tab"><a href="#"><span class="txt">tab5</span></a></li>
+		</ul>
+		<ul class="tmp-tap flex-6">
+			<li class="tab"><a href="#" class="on"><span class="txt">tab1</span></a></li>
+			<li class="tab"><a href="#"><span class="txt">tab2</span></a></li>
+			<li class="tab"><a href="#"><span class="txt">tab3</span></a></li>
+			<li class="tab"><a href="#"><span class="txt">tab4</span></a></li>
+			<li class="tab"><a href="#"><span class="txt">tab5</span></a></li>
+			<li class="tab"><a href="#"><span class="txt">tab6</span></a></li>
+		</ul>
+		<h2>tab:mobile</h2>
+		<ul class="tmp-tap mobile">
+			<li class="tab"><a href="#" class="on"><span class="txt">tab1</span></a></li>
+			<li class="tab"><a href="#"><span class="txt">tab2</span></a></li>
+			<li class="tab"><a href="#"><span class="txt">tab3</span></a></li>
+			<li class="tab"><a href="#"><span class="txt">tab4</span></a></li>
+		</ul>
+	</div>
+	<div class="container">
+		<h2>list</h2>
+		<div class="gift-container">
+			<div class="gift">1</div>
+			<div class="gift">2</div>
+			<div class="gift">3</div>
+			<div class="gift">4</div>
+			<div class="gift">5</div>
+		</div>
+	</div>
 </div>
 </body>
 </html>
